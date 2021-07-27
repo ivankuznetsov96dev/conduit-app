@@ -6,4 +6,5 @@ export interface CurrentUserInterface {
   bio: string | null;
   image: string | null;
   token: string;
+  username: string;
 }
