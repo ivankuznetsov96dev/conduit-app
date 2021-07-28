@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-global-feed',
@@ -6,5 +6,5 @@ import {Component} from "@angular/core";
   styleUrls: ['./global-feed.component.scss'],
 })
 export class GlobalFeedComponent {
-
+  public apiUrl = '/articles';
 }
