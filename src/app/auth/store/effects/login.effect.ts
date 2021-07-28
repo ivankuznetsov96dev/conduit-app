@@ -34,9 +34,9 @@ export class LoginEffect {
       this.actions$.pipe(
         ofType(loginSuccessAction),
         tap(() => {
-          // this.router.navigate(['home']);
-          console.log('Checked!');
-          this.router.navigateByUrl('/');
+          this.router.navigate(['global-feed']);
+          // console.log('Checked!');
+          // this.router.navigateByUrl('global-feed');
         }),
       ),
     { dispatch: false },

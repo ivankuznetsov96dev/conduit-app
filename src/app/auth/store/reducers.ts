@@ -9,7 +9,7 @@ import { loginAction, loginFailureAction, loginSuccessAction } from './actions/l
 import {
   getCurrentUserAction,
   getCurrentUserFailureAction,
-  getCurrentUserSuccessAction
+  getCurrentUserSuccessAction,
 } from './actions/get-current-user.action';
 
 const initialState: AuthStateInterface = {

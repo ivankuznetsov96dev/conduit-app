@@ -12,7 +12,8 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { TopBarModule } from './shared/modules/top-bar/top-bar.module';
 import { AuthInterceptor } from './shared/services/auth-interceptor.service';
-import {PersistanceService} from "./shared/services/persistance.service";
+import { PersistanceService } from './shared/services/persistance.service';
+import { GlobalFeedModule } from './global-feed/global-feed.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,6 +22,7 @@ import {PersistanceService} from "./shared/services/persistance.service";
     AppRoutingModule,
     BrowserAnimationsModule,
     AuthModule,
+    GlobalFeedModule,
     HttpClientModule,
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),

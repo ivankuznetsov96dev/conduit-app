@@ -38,9 +38,9 @@ export class RegisterEffect {
       this.actions$.pipe(
         ofType(registerSuccessAction),
         tap(() => {
-          // this.router.navigate(['home']);
-          console.log('Checked!');
-          this.router.navigateByUrl('/');
+          this.router.navigate(['global-feed']);
+          // console.log('Checked!');
+          // this.router.navigateByUrl('/');
         }),
       ),
     { dispatch: false },
